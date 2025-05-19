@@ -1,5 +1,5 @@
 import React from 'react'
-import SkeletonElement from './skeletonElement'
+import SkeletonElement from './SkeletonElement'
 
 const SkeletonFrofile = ({theme}) => {
     const themeclass=theme||'light';
