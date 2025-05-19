@@ -1,0 +1,21 @@
+import React from "react";
+import SkeletonElement from "./skeletonElement";
+import Shimmer from "./Shimmer";
+
+
+const SkeletonArticle=({theme})=>{
+    const themeclass=theme||'light';
+        return(
+        <div className={`skeleton-wrapper ${themeclass}`}>
+            <div className="skeleton-article">
+                <SkeletonElement type="title"/>
+                <SkeletonElement type="text"/>
+                <SkeletonElement type="text"/>
+                <SkeletonElement type="text"/>
+
+            </div>
+            <Shimmer/>
+        </div>
+    )
+}
+export default SkeletonArticle;
